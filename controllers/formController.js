@@ -6,7 +6,7 @@ const getHomePage = async (req, res) => {
 
 
 const postForm = async (req, res) => {
-    const user = await JSON.stringify(req.body)
+    const user = JSON.stringify(req.body)
     console.log(user)
     res.redirect('/')
 }

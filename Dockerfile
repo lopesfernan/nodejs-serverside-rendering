@@ -1,9 +1,9 @@
 FROM node:18
 WORKDIR /app
-COPY package.json /app/
+COPY package.json .
 RUN npm install
-COPY . /app/
-EXPOSE 5000
+COPY . .
+EXPOSE 8080
 CMD ["node", "server.js"]
 
 
